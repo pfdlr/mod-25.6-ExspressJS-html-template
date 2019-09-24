@@ -1,11 +1,13 @@
 var express = require('express');
 var app = express();
 
+app.use(express.static('css'));
+
 app.set('view engine', 'pug');
 app.set('views','./views');
 
 app.get('/', function(req, res) {
-    res.send('Logowanie do Google localhost:3000/auth/google');
+    res.render('index');
 });
 
 app.get('/auth/google', function(req, res){
