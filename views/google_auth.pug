@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        title="Logowanie do Google "
+    body
+        h1 Strona logowania do konta Google
+        p Podaj swój login i hasło aby się zalogować
+        form(action="/auth/google_logged_in")
+          input(placeholder="Login")
+          input(placeholder="Password")
+          button(type="submit") Zaloguj
