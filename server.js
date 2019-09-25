@@ -25,7 +25,7 @@ function(accessToken, refreshToken, profile, cb) {
     cb(null, profile);
 }
 ));
-
+app.use(express.static('css'));
 app.set('view engine', 'pug');
 app.set('views','./views');
 app.use(passport.initialize());

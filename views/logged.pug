@@ -2,7 +2,12 @@ doctype html
 html
     head
         title="Dostęp autoryzowany"
+        link(rel="stylesheet", href="../style.css", type="text/css")
     body
         h1 Jesteś zalogowany do GOOGLE
         form(action="https://mail.google.com/mail/u/0/#inbox")
             button(type="submit") Przejdź do skrzynki odbiorczej G-maila
+        p
+        form(action="https://accounts.google.com/Logout")
+            button(type="submit") Wyloguj się
+            
